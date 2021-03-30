@@ -1,0 +1,242 @@
+:root {
+    --black-color: #222222;
+    --pink-color: #f1e4e6;
+    --dark-pink-color: #F16D7F;
+    --grey-color: #F8F8F8;
+  }
+
+body {
+font-family: Lato;
+font-size: 14px;
+font-style: normal;
+font-weight: 300;
+line-height: 17px;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0)
+}
+.header {
+    background-color: var(--black-color);
+}
+
+.header__navigation {
+    display: none;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 75px;
+}
+
+.header__logo {
+    margin: 0 41px 0 0;
+}
+
+.header__button {
+    background: transparent;
+    border: none;
+    margin: 0 33px 0 0;
+}
+
+.header__link {
+    margin: 0 33px 0 0;   
+}
+
+.brand {
+    max-width: 1600px;
+    display: flex;
+    margin: 0 auto 65px auto;
+}
+
+.brand__img {
+    background-color: var(--pink-color);
+}
+
+.brand__title-container {
+    background: var(--pink-color);
+    flex-grow: 1;
+    padding: 0 0 0 92px;
+    display: flex;
+    align-items: center;
+}
+
+.brand__title {
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 58px;
+    /* width: 377px; */
+    text-transform: uppercase;
+}
+
+.brand__sub-title {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38px;
+    display: block;
+}
+
+.brand__pink-sub-title {
+    color: var(--dark-pink-color);
+}
+
+.promotions__list {
+    margin: 0 0 63px;
+}
+
+.promotions__list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.promotions__item {
+    width: 360px;
+    min-height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 30px;
+}
+
+.promotions__item--woman {
+    background-image: url(../img/promotions-woman.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.promotions__item--man {
+    background-image: url(../img/promotions-man.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.promotions__item--kids {
+    background-image: url(../img/promotions-kids.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column; 
+}
+
+.promotions__item--accessories {
+    background-image: url(../img/promotions-accesories.jpg);
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.promotions__title {
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.promotions__text {
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: var(--dark-pink-color);
+}
+
+.products__title {
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+}
+
+.products__text {
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #9F9F9F;
+    margin: 6px auto 48px auto;
+}
+
+.product__button {
+    display: none;
+}
+
+.products__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.products__item {
+    width: 360px;
+}
+
+.product__img {
+    display: block;
+}
+
+.product__description {
+    background-color: var(--grey-color);
+    padding: 25px 29px 20px 17px;
+    margin: 0 0 30px 0;
+}
+
+.product__title {
+    font-size: 13px;
+    line-height: 16px;
+    margin: 0 0 13px 0; 
+}
+
+.product__text {
+    font-size: 14px;
+    line-height: 17px;
+    color: #5D5D5D;
+    margin: 0 0 18px 0;
+}
+
+.product__price {
+    font-size: 16px;
+    line-height: 19px;
+    color: #F16D7F;
+}
+
+.products__button {
+    font-size: 16px;
+    line-height: 19px;
+    color: #F26376;
+    border: 1px solid #FF6A6A;
+    margin: 18px auto 95px auto;
+    padding: 15px 38px 15px 38px;
+    background-color: #FFFFFF;
+    position: relative;
+    left: 40%;
+}
+
+.discount {
+    background-color: var(--black-color);
+}
+
+.discount__box {
+    display: flex;
+    justify-content: space-around;
+    height: 341px;
+    align-items: center;
+}
+
+.discount_card {
+    text-align: center;
+    max-width: 360px;
+}
