@@ -240,3 +240,20 @@ line-height: 17px;
     text-align: center;
     max-width: 360px;
 }
+
+.discount_title {
+    font-size: 20px;
+    line-height: 24px;
+    font-style: normal;
+    font-weight: normal;
+    color: #FBFBFB;
+    margin: 28px 0 16px 0;
+}
+
+.discount_text {
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 300;
+    color: #FBFBFB;
+    font-style: normal;
+}
