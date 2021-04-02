@@ -17,14 +17,16 @@
     <header class="header">
         <div class="container header__container">
             <div>
-                <img class="header__logo" src="./img/logo.svg" alt="logo" width="44" height="38">
+                <a href="index.html">
+                    <img class="header__logo" src="./img/logo.svg" alt="logo" width="44" height="38">
+                </a>
                 <img src="./img/loupe.svg" alt="loupe" width="26" height="28">
             </div>
             <div>
                 <button type="button" class="header__button">
                     <img src="./img/burger.svg" alt="burger" width="32" height="23">
                 </button>
-                <a class="header__link" href="#">
+                <a class="header__link" href="registration.html">
                     <img src="./img/person.svg" alt="person" width="29" height="29">
                 </a>
                 <a href="#">
@@ -33,36 +35,37 @@
             </div>
         </div>
         <nav class="header__navigation">
+            <img class="the__cross" src="./img/thecross.svg" alt="thecross" width="12" height="12">
             <h2 class="header__title">MENU</h2>
             <ul class="header__navigation-list">
                 <li>
-                    <a class="header__sub-title" href="#">man</a>
-                    <ul class="header__sub-navigation-list">
-                        <li><a href="#" class="header__sub-navigation-link">Accessories</a></li>
-                        <li><a href="#" class="header__sub-navigation-link">Bags</a></li>
-                        <li><a href="#" class="header__sub-navigation-link">Denim</a></li>
-                        <li><a href="#" class="header__sub-navigation-link">T-Shirts</a></li>
+                    <a class="header__sub-title" href="#">MAN</a>
+                    <ul>
+                        <li class="header__sublinks"><a href="#">Accessories</a></li>
+                        <li class="header__sublinks"><a href="#">Bags</a></li>
+                        <li class="header__sublinks"><a href="#">Denim</a></li>
+                        <li class="header__sublinks"><a href="#">T-Shirts</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a href="#">woman</a>
+                    <a class="header__sub-title" href="#">WOMAN</a>
                     <ul>
-                        <li><a href="#">Accessories</a></li>
-                        <li><a href="#">Jackets & Coats</a></li>
-                        <li><a href="#">Polos</a></li>
-                        <li><a href="#">T-Shirts</a></li>
-                        <li><a href="#">Shirts</a></li>
+                        <li class="header__sublinks"><a href="#">Accessories</a></li>
+                        <li class="header__sublinks"><a href="#">Jackets & Coats</a></li>
+                        <li class="header__sublinks"><a href="#">Polos</a></li>
+                        <li class="header__sublinks"><a href="#">T-Shirts</a></li>
+                        <li class="header__sublinks"><a href="#">Shirts</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a href="#">kids</a>
+                    <a class="header__sub-title" href="#">KIDS</a>
                     <ul>
-                        <li><a href="#">Accessories</a></li>
-                        <li><a href="#">Jackets & Coats</a></li>
-                        <li><a href="#">Polos</a></li>
-                        <li><a href="#">T-Shirts</a></li>
-                        <li><a href="#">Shirts</a></li>
-                        <li><a href="#">Bags</a></li>
+                        <li class="header__sublinks"><a href="#">Accessories</a></li>
+                        <li class="header__sublinks"><a href="#">Jackets & Coats</a></li>
+                        <li class="header__sublinks"><a href="#">Polos</a></li>
+                        <li class="header__sublinks"><a href="#">T-Shirts</a></li>
+                        <li class="header__sublinks"><a href="#">Shirts</a></li>
+                        <li class="header__sublinks"><a href="#">Bags</a></li>
                     </ul>
                 </li>
 
@@ -230,6 +233,13 @@
                 <div class="subscribe__cards">
                     <h2 class="subscribe__title">SUBSCRIBE</h2>
                     <p class="subscribe__title-text">FOR OUR NEWLETTER AND PROMOTION</p>
+                    <form action="#">
+                        <label for="email"></label>
+                        <div class="form__wiew">
+                            <input class="email__window" type="email" placeholder="Enter Your Email">
+                            <button class="email__button" type="submit">Subscribe</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -237,11 +247,15 @@
             <div class="container social__block-items">
                 <p class="all__rights-text">© 2021 Brand All Rights Reserved.</p>
                 <ul class="social__block-links">
-                    <li class="social__links-border"><a href="#"><img src="./img/facebook.svg" alt="facebook"></a></li>
-                    <li class="social__links-border"><a href="#"><img src="./img/instagram.svg" alt="instagram"></a>
+                    <li class="social__links-border"><button class="social__buttons"><img src="./img/facebook.svg"
+                                alt="facebook"></button></li>
+                    <li class="social__links-border"><button class="social__buttons"><img src="./img/instagram.svg"
+                                alt="instagram"></button>
                     </li>
-                    <li class="social__links-border"><a href="#"><img src="./img/lyambda.svg" alt="lyambda"></a></li>
-                    <li class="social__links-border"><a href="#"><img src="./img/twitter.svg" alt="twitter"></a></li>
+                    <li class="social__links-border"><button class="social__buttons"><img src="./img/lyambda.svg"
+                                alt="lyambda"></button></li>
+                    <li class="social__links-border"><button class="social__buttons"><img src="./img/twitter.svg"
+                                alt="twitter"></button></li>
                 </ul>
             </div>
         </div>

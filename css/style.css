@@ -33,7 +33,51 @@ line-height: 17px;
 }
 
 .header__navigation {
-    display: none;
+    position: absolute;
+    width: 232px;
+    height: 764px;
+    left: 80%;
+    top: 75px;    
+    background-color: rgba(255, 255, 255, 1.0);
+    z-index:1;
+}
+
+.the__cross {
+    margin-right: 12px;
+    margin-top: 12px;
+    float: right;
+}
+
+.header__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    margin-left: 34px;
+    margin-top: 37px;
+    margin-bottom: 24px;
+}
+
+.header__sub-title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F16D7F;
+    text-decoration: none;
+    margin-left: 33px;
+}
+
+.header__sublinks a {
+    color: #6F6E6E;
+    margin-left: 54px;
+    text-decoration: none;
+}
+
+.header__sublinks {
+    margin-bottom: 11px;
+    margin-top: 12px;
 }
 
 .header__container {
@@ -333,10 +377,173 @@ line-height: 17px;
     text-align: center;
 }
 
-.social__links-border {
-    background-color: #fff;
+.social__buttons {
     width: 32px;
     height: 32px;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    background-color: #FFFFFF;
+    position: relative;
+    margin: auto 7px auto 0;
+}
+
+.email__window {
+    width: 256px;
+    height: 49px;
+    background-color: #E1E1E1;
+    border: 0px;
+    border-radius: 20px;
+    padding-left: 22px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.form__wiew {
+    display: flex;
+}
+
+.email__button {
+    width: 100px;
+    height: 49px;
+    margin-left: -20px;
+    border-radius: 0 20px 20px 0;
+    background: #F16D7F;
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    border: 0px;
+}
+
+.registration__header {
+    height: 148px;
+    background: var(--pink-color);
+}
+
+.registration__header-title{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F16D7F;
+    padding: 59px 0 0 0;
+}
+
+.content__block {
+    display: flex;
+    margin: 64px auto 96px auto;
+}
+
+.registration__form {
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+}
+
+.gender__block {
+    display: flex;
+}
+
+.label_name {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 20px;
+    color: #222222;
+}
+
+.input {
+    margin-bottom: 20px;
+    height: 45px;
+    padding-left: 17px;
+}
+
+.gender__block {
+    margin-top: 13px;
+    margin-bottom: 35px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 13px;
+}
+
+.radio {
+    width: 17px;
+    height: 17px;
+    border: 1px solid #A4A4A4;
+    box-sizing: border-box;
+    margin-top: -2px;
+}
+
+.radio__button {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 13px;
+    color: #000000;
+}
+
+.form__text {
+    margin-top: -5px;
+    margin-bottom: 39px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+}
+
+.registration__button {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    padding: 16px 66px 17px 29px;
+    background-color: var(--dark-pink-color);
+    width: 60%;
+    border: 1px solid #F16D7F;
+    display: flex;
     align-items: center;
-    margin: auto 7px auto auto;
+}
+
+.arrow {
+    margin-left: 20px;
+}
+
+.offer {
+    display: flex;
+    flex-direction: column;
+    width: 652px;
+    margin-left: 128px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+}
+
+.loyalty__text {
+    margin: 22px auto 21px auto;
+}
+
+.loyalty__bullets {
+    padding-bottom: 16px;
+    margin-left: 40px;
+    position: relative;
+}
+
+.loyalty__bullets:before {
+    content: "";
+    background-image: url(../img/checkmark.svg);
+    position: absolute;
+    width: 20px;
+    height: 16px;
+    margin-left: -40px;
+    margin-bottom: -5px;
+    top: 8px
 }
