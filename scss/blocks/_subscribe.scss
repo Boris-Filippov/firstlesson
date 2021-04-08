@@ -1,0 +1,51 @@
+.subscribe {
+
+    &__block {
+        background-image: url(../img/subscribe.png);
+        height: 448px;
+        max-width: 1600px;
+        margin: 0 auto;
+    }
+
+    &__block-items {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    &__cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    &__image {
+        margin: 86px 0 30px 0;
+    }
+
+    &__text {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 24px;
+        max-width: 359px;
+    }
+
+    &__title {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 40px;
+        color: #222224;
+        margin: 110px auto 0 auto;
+    }
+
+    &__title-text {
+        font-style: normal;
+        font-size: 18px;
+        line-height: 30px;
+        color: #222224;
+        margin: auto 0 30px auto;
+    }
+}
