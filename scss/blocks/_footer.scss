@@ -1,0 +1,66 @@
+.all__rights-text {
+    color: #FBFBFB;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.social__block {
+    background-color: $black-color;
+}
+
+.social__block-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 79px;
+}
+
+.social__block-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.social__buttons {
+    width: 32px;
+    height: 32px;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    background-color: #FFFFFF;
+    position: relative;
+    margin: auto 7px auto 0;
+}
+
+.email__window {
+    width: 256px;
+    height: 49px;
+    background-color: #E1E1E1;
+    border: 0px;
+    border-radius: 20px;
+    padding-left: 22px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.form__wiew {
+    display: flex;
+}
+
+.email__button {
+    width: 100px;
+    height: 49px;
+    margin-left: -20px;
+    border-radius: 0 20px 20px 0;
+    background: #F16D7F;
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    border: 0px;
+}

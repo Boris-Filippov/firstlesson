@@ -1,0 +1,5 @@
+@mixin font($size,$haight,$weight) {
+    font-size: $size;
+    line-height: $haight;
+    font-weight: $weight;
+}
