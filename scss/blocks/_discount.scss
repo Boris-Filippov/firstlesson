@@ -6,6 +6,18 @@
         justify-content: space-around;
         height: 341px;
         align-items: center;
+
+        @include tablet {
+            flex-direction: column;
+            height: 610px;
+            padding-top: 48px;
+            padding-bottom: 64px;
+        }
+
+        @include mobile {
+            flex-direction: column;
+            padding-bottom: 81px;
+        }  
     }
 
     &_card {

@@ -12,30 +12,56 @@
         line-height: 29px;
         color: #F16D7F;
         padding: 59px 0 0 0;
+        
+        @include mobile {
+            text-align: center;
+        }
     }
-}
-.content__block {
-    display: flex;
-    margin: 64px auto 96px auto;
-}
+    
+    &__form {
+        display: flex;
+        flex-direction: column;
+        width: 360px;
 
-.registration__form {
-    display: flex;
-    flex-direction: column;
-    width: 360px;
-}
+        @include mobile {
+            width: 100%;
+        }    
+    }
 
-.gender__block {
-    display: flex;
-}
-
-.label_name {
+    &__form-name {
     font-style: normal;
     font-weight: 300;
     font-size: 16px;
     line-height: 19px;
     margin-bottom: 20px;
     color: #222222;
+    }
+    
+    &__button {
+    font-style: normal;
+    font-weight: normal;
+    width: 167px;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    padding: 16px 24px 17px 29px;
+    background-color: $dark-pink-color;
+    border: 1px solid #F16D7F;
+    display: flex;
+    align-items: center;
+    }
+}
+.content__block {
+    display: flex;
+    margin: 64px auto 96px auto;
+
+    @include mobile {
+        flex-direction: column;
+    }    
+}
+
+.gender__block {
+    display: flex;
 }
 
 .input {
@@ -79,20 +105,6 @@
     color: #B1B1B1;
 }
 
-.registration__button {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 17px;
-    color: #FFFFFF;
-    padding: 16px 66px 17px 29px;
-    background-color: $dark-pink-color;
-    width: 60%;
-    border: 1px solid #F16D7F;
-    display: flex;
-    align-items: center;
-}
-
 .arrow {
     margin-left: 20px;
 }
@@ -107,25 +119,88 @@
     font-size: 24px;
     line-height: 29px;
     color: #000000;
+
+    @include tablet {
+        margin-left: 22px;
+    }
+
+    @include mobile {
+        margin: 40px 0px 0px 0px;
+        width: 100%;
+    }
+
+    &__header {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+
+        @include tablet {
+            font-size: 16px;
+            line-height: 19px;
+        }
+    
+        @include mobile {
+            font-size: 16px;
+            line-height: 19px;
+        }
+    }
+
+    &__text {
+        margin: 22px auto 21px auto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+
+        @include tablet {
+            font-size: 16px;
+            line-height: 19px;
+        }
+    
+        @include mobile {
+            font-size: 16px;
+            line-height: 19px;
+        }    
+    }
+
+    &__bullets {
+        padding-bottom: 16px;
+        margin-left: 40px;
+        position: relative;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+
+        @include tablet {
+            font-size: 16px;
+            line-height: 19px;
+        }
+    
+        @include mobile {
+            font-size: 16px;
+            line-height: 19px;
+        } 
+    }
+
+    &__bullets:before {
+        content: "";
+        background-image: url(../img/checkmark.svg);
+        position: absolute;
+        width: 20px;
+        height: 16px;
+        margin-left: -40px;
+        margin-bottom: -5px;
+        top: 8px;
+
+        @include tablet {
+            top: 0px;
+        }
+    
+        @include mobile {
+            top: 0px;
+        }
+    }    
 }
 
-.loyalty__text {
-    margin: 22px auto 21px auto;
-}
 
-.loyalty__bullets {
-    padding-bottom: 16px;
-    margin-left: 40px;
-    position: relative;
-}
 
-.loyalty__bullets:before {
-    content: "";
-    background-image: url(../img/checkmark.svg);
-    position: absolute;
-    width: 20px;
-    height: 16px;
-    margin-left: -40px;
-    margin-bottom: -5px;
-    top: 8px
-}

@@ -1,15 +1,9 @@
 .header {
     background-color: $black-color;
+    position: relative;
   
     &__navigation {
-        display: none;
-        position: absolute;
-        width: 232px;
-        height: 764px;
-        top: 75px;
-        margin-left: 170px;
-        background-color: white;
-        z-index: 1;        
+        display: none;   
     }
 
     &__cross {
@@ -65,20 +59,68 @@
     &__logo {
         margin: 0 41px 0 0;
     }
-  
+
     &__button {
         background: transparent;
         border: none;
         margin: 0 33px 0 0;
-        display: inline-block;
-    }
 
-    &__button:hover &__navigation {
-        display: block;
-    }
+        &:hover+.header__navigation {
+            display: block;
+        }
 
+        &:hover .header__button-icon {
+            fill: $dark-pink-color;
+        }
+
+        &:active .header__button-icon {
+            fill: $pink-color;
+        }
+    }
+    
+    &__navigation {
+        position: absolute;
+        width: 232px;
+        height: 764px;
+        top: 75px;
+        margin-left: 90px;
+        background-color: white;
+        z-index: 1;
+        
+        @include tablet {
+            margin-left: 30px;
+        }
+
+        @include mobile {
+            margin-left: 10px;
+        }
+    }
+      
     &__link {
         margin: 0 33px 0 0;
     }
+
+    &:hover .header__button-icon {
+        fill: $dark-pink-color;
+    }
+
+    &:active .header__button-icon {
+        fill: $pink-color;
+    }
 }
 
+@media (max-width: $desktop-width) {
+    .header {
+        padding: 0 16px;
+    }        
+}
+
+@media (max-width: $tablet-width) {
+    .header {
+        padding: 0 16px;
+
+        &__link {
+            display: none;
+        }
+    }
+}

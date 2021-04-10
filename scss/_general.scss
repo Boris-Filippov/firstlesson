@@ -7,7 +7,7 @@ body {
 }
  
 .container {
-    width: 1140px;
+    width: 71%;
     margin: 0 auto;
 }
 
@@ -32,4 +32,10 @@ li {
     font-size: 13px;
     line-height: 16px;
     color: #B1B1B1;
+}
+
+@media (max-width: $desktop-width) {
+    .container {
+        width: 96%;
+    }        
 }

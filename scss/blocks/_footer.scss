@@ -4,6 +4,23 @@
     font-weight: normal;
     font-size: 16px;
     line-height: 19px;
+
+    @include mobile {
+        display: none;
+    } 
+}
+
+.all__rights-text-mob {
+    color: #FBFBFB;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    display: none;
+
+    @include mobile {
+        display: block;
+    }   
 }
 
 .social__block {
@@ -15,6 +32,12 @@
     justify-content: space-between;
     align-items: center;
     min-height: 79px;
+
+    @include mobile {
+        flex-direction: column;
+        height: 143px;
+        justify-content: space-around;
+    } 
 }
 
 .social__block-links {
@@ -22,6 +45,10 @@
     justify-content: space-around;
     align-items: center;
     text-align: center;
+
+    @include mobile {
+        margin-top: 43px;
+    } 
 }
 
 .social__buttons {
