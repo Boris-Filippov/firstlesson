@@ -26,6 +26,10 @@ li {
     list-style-type: none; /* Убираем маркеры у всех Li */
 }
 
+ul {
+    padding-left: 0px; /* Убрал отступ у всех ul. Не знаю откуда он вообще */
+}
+
 .input {
     font-style: normal;
     font-weight: 300;
@@ -39,3 +43,5 @@ li {
         width: 96%;
     }        
 }
+
+

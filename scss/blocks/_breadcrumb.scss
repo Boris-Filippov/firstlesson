@@ -1,0 +1,35 @@
+.breadcrumb {
+    display: flex;
+    margin: 0 33px 0 0;
+    margin-bottom: 0rem;
+    
+    @include mobile {
+        margin-bottom: 46px !important;
+    }
+}
+
+.breadcrumb-item__link {
+    color: #636363;
+    text-decoration: none;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px ;
+    line-height: 17px;
+}
+
+.breadcrumb-item.aria-current {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F16D7F;
+}
+
+.breadcrumb-item.active {
+    font-family: Lato;
+    color: #F16D7F !important;
+    font-style: normal;
+    font-weight: 700;
+}
