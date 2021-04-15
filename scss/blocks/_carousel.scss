@@ -1,0 +1,34 @@
+.carousel-dark {
+    width: 1600px;
+    height: 777px;
+    display: flex;
+    margin: 0 auto;
+    z-index: 1 !important;
+    position: relative !important;
+            
+    @include tablet {
+        width: 768px;
+        height: 100%;
+    }
+
+    @include mobile {
+        width: 375px;
+        height: 100%;
+    }
+}
+
+.d-block {
+
+    @include mobile {
+        background-image: url(../img/product-slider-first-foto-mob.png);
+        width: 375px !important;
+    }
+}
+
+.carousel-control-next-icon {
+    background-image: url(../img/slider-right-arrow.svg) no-repeat !important;  
+}
+
+.carousel-control-prev-icon {
+    background-image: url(../img/slider-left.svg) no-repeat !important;
+}

@@ -7,7 +7,7 @@ body {
 }
  
 .container {
-    width: 1140px;
+    width: 71%;
     margin: 0 auto;
 }
 
@@ -26,6 +26,10 @@ li {
     list-style-type: none; /* Убираем маркеры у всех Li */
 }
 
+ul {
+    padding-left: 0px; /* Убрал отступ у всех ul. Не знаю откуда он вообще */
+}
+
 .input {
     font-style: normal;
     font-weight: 300;
@@ -33,3 +37,11 @@ li {
     line-height: 16px;
     color: #B1B1B1;
 }
+
+@media (max-width: $desktop-width) {
+    .container {
+        width: 96%;
+    }        
+}
+
+
