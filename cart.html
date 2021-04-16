@@ -79,49 +79,62 @@
             <h1 class="cart__header-title container">SHOPPING CART</h1>
         </section>
         <section class="cart__block container">
-            <li class="cart__cart-box">
+            <ul class="cart__cart-box">
                 <ul class="cart__cart-table">
-                    <img class="cart__img" src="./img/cart-goods-boy.jpg" alt="cart-goods-boy" width="262" height="306">
+                    <li>
+                        <img class="cart__img" src="./img/cart-goods-boy.jpg" alt="cart-goods-boy" width="262"
+                            height="306">
+                    </li>
                     <div class="cart__cart-content">
-                        <div class="cart__title-and-cross">
+                        <li class="cart__title-and-cross">
                             <h3 class="cart__cart-title">MANGO PEOPLE T-SHIRT</h3>
                             <img class="cart__cart-cross-img" src="./img/cart-cross.svg" alt="cart-cross" width="18"
                                 height="18">
-                        </div>
-                        <p class="cart__cart-text">Price: <span class="cart__pink-text">$300</span></p>
-                        <p class="cart__cart-text">Color: Red</p>
-                        <p class="cart__cart-text">Size: Xl</p>
-                        <div class="cart__text-and-button">
+                        </li>
+                        <li>
+                            <p class="cart__cart-text">Price: <span class="cart__pink-text">$300</span></p>
+                            <p class="cart__cart-text">Color: Red</p>
+                            <p class="cart__cart-text">Size: Xl</p>
+                        </li>
+                        <li class="cart__text-and-button">
                             <p class="cart__cart-text">Quantity:</p>
                             <button class="cart__quantity-button">2</button>
-                        </div>
+                        </li>
                     </div>
                 </ul>
                 <ul class="cart__cart-table">
-                    <img class="cart__img" src="./img/cart-walking-man.jpg" alt="cart-walking-man" width="262"
-                        height="306">
+                    <li> <img class="cart__img" src="./img/cart-walking-man.jpg" alt="cart-walking-man" width="262"
+                            height="306">
+
+                    </li>
                     <div class="cart__cart-content">
-                        <div class="cart__title-and-cross">
+                        <li class="cart__title-and-cross">
                             <h3 class="cart__cart-title">MANGO PEOPLE T-SHIRT</h3>
                             <img class="cart__cart-cross-img" src="./img/cart-cross.svg" alt="cart-cross" width="18"
                                 height="18">
-                        </div>
-                        <p class="cart__cart-text">Price: <span class="cart__pink-text">$300</span></p>
-                        <p class="cart__cart-text">Color: Red</p>
-                        <p class="cart__cart-text">Size: Xl</p>
-                        <div class="cart__text-and-button">
+                        </li>
+                        <li>
+                            <p class="cart__cart-text">Price: <span class="cart__pink-text">$300</span></p>
+                            <p class="cart__cart-text">Color: Red</p>
+                            <p class="cart__cart-text">Size: Xl</p>
+                        </li>
+                        <li class="cart__text-and-button">
                             <p class="cart__cart-text">Quantity:</p>
                             <button class="cart__quantity-button">2</button>
-                        </div>
+                        </li>
                     </div>
                 </ul>
                 <ul class="cart__shopping-buttons-box">
-                    <button class="cart__shopping-buttons">CLEAR SHOPPING CART</button>
-                    <button class="cart__shopping-buttons">CONTINUE SHOPPING</button>
+                    <li>
+                        <button class="cart__shopping-buttons">CLEAR SHOPPING CART</button>
+                    </li>
+                    <li>
+                        <button class="cart__shopping-buttons">CONTINUE SHOPPING</button>
+                    </li>
                 </ul>
-            </li>
-            <li class="cart__form-and-checkout-box">
-                <ul>
+            </ul>
+            <ul class="cart__form-and-checkout-box">
+                <li>
                     <form class="cart__form" action="cart__form">
                         <fieldset>
                             <legend class="cart__form-title">SHIPPING ADRESS</legend>
@@ -129,16 +142,16 @@
                         <input class="input" id="country" type="text" placeholder="Bangladesh">
                         <input class="input" id="State" type="text" placeholder="State">
                         <input class="input" id="postcode" type="text" placeholder="Postcode / Zip">
-                        <button class="cart__form-button" type="submit">JOIN NOW</button>
+                        <button class="cart__form-button" type="submit">GET A QUOTE</button>
                     </form>
-                </ul>
+                </li>
 
                 <ul class="cart__checkout-box">
                     <li>
-                        <p class="cart__sub-total">SUB TOTAL &nbsp $900</p>
+                        <p class="cart__sub-total">SUB TOTAL &nbsp; $900</p>
                     </li>
                     <li>
-                        <p class="cart__grand-total">GRAND TOTAL &nbsp<span class="cart__pink-text"> $900</span></p>
+                        <p class="cart__grand-total">GRAND TOTAL <span class="cart__pink-text"> &nbsp; $900</span></p>
                     </li>
                     <li>
                         <hr class="cart__hr">
@@ -148,7 +161,7 @@
                     </li>
                 </ul>
 
-            </li>
+            </ul>
         </section>
     </main>
 
@@ -165,7 +178,6 @@
                     <h2 class="subscribe__title">SUBSCRIBE</h2>
                     <p class="subscribe__title-text">FOR OUR NEWLETTER AND PROMOTION</p>
                     <form action="#">
-                        <label for="email"></label>
                         <div class="form__wiew">
                             <input class="email__window" type="email" placeholder="Enter Your Email">
                             <button class="email__button" type="submit">Subscribe</button>

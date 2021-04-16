@@ -1,8 +1,8 @@
 body {
-    font-family: Lato;
-    font-size: 14px;
+    font-family: Lato;    
     font-style: normal;
     font-weight: 300;
+    font-size: 14px;    
     line-height: 17px;
 }
  
@@ -26,8 +26,8 @@ li {
     list-style-type: none; /* Убираем маркеры у всех Li */
 }
 
-ul {
-    padding-left: 0px; /* Убрал отступ у всех ul. Не знаю откуда он вообще */
+ol, ul {
+    padding-left: 0em !important;  /* Убрал отступ у всех ul. Не знаю откуда он вообще */
 }
 
 .input {

@@ -19,11 +19,7 @@
     }
 
     &__header-title{
-        font-family: Lato;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 24px;
-        line-height: 29px;
+        @include font (Lato, normal, 400, 24px, 29px);
         color: #F16D7F;
                 
         @include mobile {
@@ -49,32 +45,23 @@
     }
 
     &__collection-first-title {
-        font-family: Lato;
-        font-style: normal;
-        font-weight: 300;
-        font-size: 14px;
-        line-height: 17px;
+        @include font (Lato, normal, 300, 14px, 17px);
         color: #F16D7F;
         padding-top: 64px;
         margin: 0 auto;
     }
 
     &__collection-second-title {
-        font-family: Lato;
-        font-weight: 300;
-        font-size: 18px;
-        line-height: 22px;
+        @include font (Lato, normal, 300, 18px, 22px);
         color: #4D4D4D;
         margin: 0 auto;
         margin-bottom: 48px;
     }
 
     &__collection-text {
-        font-family: Lato;
+        @include font (Lato, normal, 300, 14px, 17px);
         width: 555px;
         font-weight: 300;
-        font-size: 14px;
-        line-height: 17px;
         text-align: center;
         color: #5E5E5E;
         margin: 0 auto;
@@ -86,11 +73,7 @@
     }
 
     &__collection-price {
-        font-family: Lato;
-        font-style: normal;
-        font-weight: 300;
-        font-size: 24px;
-        line-height: 29px;
+        @include font (Lato, normal, 300, 24px, 29px);
         color: #EF5B70;
         margin: 0 auto;
         margin-bottom: 65px;
@@ -106,11 +89,7 @@
         width: 211px;
         height: 47px;
         border: 1px solid #FF6A6A;
-        font-family: Lato;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 19px;
+        @include font (Lato, normal, 400, 16px, 19px);
         color: #F26376;
         background-color: #FFFFFF;
         align-items: center;
@@ -125,9 +104,9 @@
 }   
 
 .btn {
-    font-family: Lato;
-    font-style: normal;
-    font-weight: normal;
+    font-family: Lato !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
     font-size: 14px !important;
     line-height: 17px !important;
 
