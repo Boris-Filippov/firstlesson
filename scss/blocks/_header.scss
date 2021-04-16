@@ -23,11 +23,7 @@
         margin-bottom: 24px;
         text-align: left;
     }
-
-    &__navigation-list {
-        text-align: left;
-    }
-  
+      
     &__sub-title {
         font-style: normal;
         font-weight: normal;
@@ -36,6 +32,10 @@
         color: #F16D7F;
         text-decoration: none;
         margin-left: 33px;
+    }
+
+    &__navigation-list {
+        text-align: left;
     }
   
     &__sublinks a {

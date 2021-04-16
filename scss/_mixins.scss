@@ -1,7 +1,9 @@
-@mixin font($size: 16px, $height: 16px, $weigh: normal) {
+@mixin font($font: Lato, $style: normal, $weight: normal, $size: 16px, $height: 16px) {
+    font-family: $font;
+    font-style: $style;
+    font-weight: $weight;
     font-size: $size;
     line-height: $height;
-    font-weight: $weigh;
 }
 
 @mixin tablet {
