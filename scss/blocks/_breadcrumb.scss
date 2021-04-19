@@ -11,25 +11,27 @@
 .breadcrumb-item__link {
     color: #636363;
     text-decoration: none;
-    font-family: Lato;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 14px ;
-    line-height: 17px;
+    font-family: Lato !important;
+    font-style: normal !important;
+    font-weight: 300 !important;
+    font-size: 14px !important;
+    line-height: 17px !important;
 }
 
 .breadcrumb-item.aria-current {
-    font-family: Lato;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 17px;
+    font-family: Lato !important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    font-size: 14px !important;
+    line-height: 17px !important;
     color: #F16D7F;
 }
 
 .breadcrumb-item.active {
-    font-family: Lato;
     color: #F16D7F !important;
-    font-style: normal;
-    font-weight: 700;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    font-size: 14px !important;
+    line-height: 17px !important;
+    margin-top: 4px;
 }

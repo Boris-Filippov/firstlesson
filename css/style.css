@@ -54,9 +54,9 @@ table {
 
 body {
   font-family: Lato;
-  font-size: 14px;
   font-style: normal;
   font-weight: 300;
+  font-size: 14px;
   line-height: 17px;
 }
 
@@ -81,8 +81,8 @@ li {
   /* Убираем маркеры у всех Li */
 }
 
-ul {
-  padding-left: 0px;
+ol, ul {
+  padding-left: 0em !important;
   /* Убрал отступ у всех ul. Не знаю откуда он вообще */
 }
 
@@ -127,10 +127,6 @@ ul {
   text-align: left;
 }
 
-.header__navigation-list {
-  text-align: left;
-}
-
 .header__sub-title {
   font-style: normal;
   font-weight: normal;
@@ -139,6 +135,10 @@ ul {
   color: #F16D7F;
   text-decoration: none;
   margin-left: 33px;
+}
+
+.header__navigation-list {
+  text-align: left;
 }
 
 .header__sublinks a {
@@ -267,49 +267,60 @@ ul {
 }
 
 .brand__title {
-  font-size: 48px;
-  font-weight: 900;
-  line-height: 58px;
-  /* width: 377px; */
   text-transform: uppercase;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 58px;
 }
 
 @media (max-width: 1600px) {
   .brand__title {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 900;
     font-size: 44px;
     line-height: 52px;
-    font-weight: normal;
   }
 }
 
 @media (max-width: 768px) {
   .brand__title {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 900;
     font-size: 38px;
     line-height: 46px;
-    font-weight: normal;
   }
 }
 
 .brand__sub-title {
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 38px;
   display: block;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
 }
 
 @media (max-width: 1600px) {
   .brand__sub-title {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 700;
     font-size: 24px;
     line-height: 29px;
-    font-weight: normal;
   }
 }
 
 @media (max-width: 768px) {
   .brand__sub-title {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 700;
     font-size: 20px;
     line-height: 24px;
-    font-weight: normal;
   }
 }
 
@@ -389,7 +400,6 @@ ul {
   background-size: cover;
   display: flex;
   flex-direction: column;
-  z-index: 1;
 }
 
 .promotions__item--kids {
@@ -422,12 +432,17 @@ ul {
 
 .promotions__title {
   color: #FFFFFF;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 19px;
-  font-weight: 400;
 }
 
 .promotions__text {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   text-align: center;
@@ -435,12 +450,18 @@ ul {
 }
 
 .products__title {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 400;
   font-size: 30px;
   line-height: 36px;
   text-align: center;
 }
 
 .products__text {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 17px;
   text-align: center;
@@ -471,46 +492,10 @@ ul {
   }
 }
 
-.products__item .product__img {
-  display: block;
-}
-
-@media (max-width: 375px) {
-  .products__item .product__img {
-    width: 100%;
-  }
-}
-
-.products__item .product__description {
-  background-color: #F8F8F8;
-  padding: 25px 29px 20px 17px;
-  margin: 0 0 30px 0;
-}
-
-.products__item .product__title {
-  font-size: 13px;
-  line-height: 16px;
-  margin: 0 0 13px 0;
-}
-
-.products__item .product__text {
-  font-size: 14px;
-  line-height: 17px;
-  color: #5D5D5D;
-  margin: 0 0 18px 0;
-}
-
-.products__item .product__price {
-  font-size: 16px;
-  line-height: 19px;
-  color: #F16D7F;
-}
-
-.products__item .product__button {
-  display: none;
-}
-
 .products__button {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 19px;
   color: #FFFFFF;
@@ -534,6 +519,105 @@ ul {
     color: #F26376;
     background-color: #FFFFFF;
   }
+}
+
+.product__img {
+  display: block;
+}
+
+@media (max-width: 375px) {
+  .product__img {
+    width: 100%;
+  }
+}
+
+.product__description {
+  background-color: #F8F8F8;
+  padding: 25px 29px 20px 17px;
+  margin: 0 0 30px 0;
+}
+
+.product__title {
+  color: #000000;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  margin: 0 0 13px 0;
+}
+
+.product__text {
+  color: #5D5D5D;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  margin: 0 0 18px 0;
+}
+
+.product__price {
+  color: #F16D7F;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.product__button {
+  display: none;
+}
+
+.cart-wrapper-overlay {
+  position: relative;
+}
+
+.cart-wrapper-overlay:before {
+  content: '';
+  width: 360px;
+  height: 420px;
+  background: rgba(58, 56, 56, 0.86);
+  position: absolute;
+  top: 0;
+}
+
+.product__cart-button {
+  position: absolute;
+  top: 188px;
+  left: 111px;
+  width: 138px;
+  height: 43px;
+  border: 1px solid #FFFFFF;
+  color: #FFFFFF;
+  background: rgba(58, 56, 56, 0.86);
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  padding: 13px 12px 13px 50px;
+}
+
+.product__cart-button:before {
+  content: '';
+  background-image: url(../img/cart-icon-goods.svg);
+  position: absolute;
+  left: 13px;
+  top: 8px;
+  width: 26px;
+  height: 24px;
+}
+
+.cart-wrapper-overlay:before,
+.product__cart-button {
+  display: none;
+}
+
+.products__item:hover .cart-wrapper-overlay:before,
+.products__item:hover .product__cart-button {
+  display: block;
 }
 
 .discount {
@@ -569,20 +653,22 @@ ul {
 }
 
 .discount_title {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 400;
   font-size: 20px;
   line-height: 24px;
-  font-style: normal;
-  font-weight: normal;
   color: #FBFBFB;
   margin: 28px 0 16px 0;
 }
 
 .discount_text {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
   font-size: 14px;
   line-height: 17px;
-  font-weight: 300;
   color: #FBFBFB;
-  font-style: normal;
 }
 
 .subscribe__block {
@@ -653,18 +739,20 @@ ul {
 }
 
 .subscribe__text {
-  font-style: normal;
-  font-weight: normal;
+  font-family: Lato;
+  font-style: italic;
+  font-weight: 400;
   font-size: 20px;
   line-height: 24px;
   max-width: 359px;
 }
 
 .subscribe__title {
+  font-family: Lato;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 24px;
-  line-height: 40px;
+  line-height: 38px;
   color: #222224;
   margin: 110px auto 0 auto;
 }
@@ -682,7 +770,9 @@ ul {
 }
 
 .subscribe__title-text {
+  font-family: Lato;
   font-style: normal;
+  font-weight: 400;
   font-size: 18px;
   line-height: 30px;
   color: #222224;
@@ -770,6 +860,10 @@ ul {
   background-color: #FFFFFF;
   position: relative;
   margin: auto 7px auto 0;
+  left: 6.25%;
+  right: 12.5%;
+  top: 0%;
+  bottom: 8%;
 }
 
 .email__window {
@@ -809,8 +903,9 @@ ul {
 }
 
 .registration__header-title {
+  font-family: Lato;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 24px;
   line-height: 29px;
   color: #F16D7F;
@@ -836,18 +931,18 @@ ul {
 }
 
 .registration__form-name {
+  font-family: Lato;
   font-style: normal;
   font-weight: 300;
-  font-size: 16px;
-  line-height: 19px;
-  margin-bottom: 20px;
+  font-size: 19px;
+  line-height: 20px;
   color: #222222;
 }
 
 .registration__button {
+  font-family: Lato;
   font-style: normal;
-  font-weight: normal;
-  width: 167px;
+  font-weight: 300;
   font-size: 14px;
   line-height: 17px;
   color: #FFFFFF;
@@ -880,12 +975,13 @@ ul {
 }
 
 .gender__block {
-  margin-top: 13px;
-  margin-bottom: 35px;
+  font-family: Lato;
   font-style: normal;
   font-weight: 300;
   font-size: 11px;
   line-height: 13px;
+  margin-top: 13px;
+  margin-bottom: 35px;
 }
 
 .radio {
@@ -897,6 +993,7 @@ ul {
 }
 
 .radio__button {
+  font-family: Lato;
   font-style: normal;
   font-weight: 300;
   font-size: 11px;
@@ -905,12 +1002,13 @@ ul {
 }
 
 .form__text {
-  margin-top: -5px;
-  margin-bottom: 39px;
+  font-family: Lato;
   font-style: normal;
   font-weight: 300;
   font-size: 13px;
   line-height: 16px;
+  margin-top: -5px;
+  margin-bottom: 39px;
   color: #B1B1B1;
 }
 
@@ -923,6 +1021,7 @@ ul {
   flex-direction: column;
   width: 652px;
   margin-left: 128px;
+  font-family: Lato;
   font-style: normal;
   font-weight: 300;
   font-size: 24px;
@@ -944,6 +1043,8 @@ ul {
 }
 
 .offer__header {
+  font-family: Lato;
+  font-style: normal;
   font-weight: 300;
   font-size: 24px;
   line-height: 29px;
@@ -951,6 +1052,9 @@ ul {
 
 @media (max-width: 1600px) {
   .offer__header {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
     font-size: 16px;
     line-height: 19px;
   }
@@ -958,6 +1062,9 @@ ul {
 
 @media (max-width: 768px) {
   .offer__header {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
     font-size: 16px;
     line-height: 19px;
   }
@@ -965,6 +1072,7 @@ ul {
 
 .offer__text {
   margin: 22px auto 21px auto;
+  font-family: Lato;
   font-style: normal;
   font-weight: 300;
   font-size: 24px;
@@ -973,6 +1081,9 @@ ul {
 
 @media (max-width: 1600px) {
   .offer__text {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
     font-size: 16px;
     line-height: 19px;
   }
@@ -980,6 +1091,9 @@ ul {
 
 @media (max-width: 768px) {
   .offer__text {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
     font-size: 16px;
     line-height: 19px;
   }
@@ -989,6 +1103,8 @@ ul {
   padding-bottom: 16px;
   margin-left: 40px;
   position: relative;
+  font-family: Lato;
+  font-style: normal;
   font-weight: 300;
   font-size: 24px;
   line-height: 29px;
@@ -996,6 +1112,9 @@ ul {
 
 @media (max-width: 1600px) {
   .offer__bullets {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
     font-size: 16px;
     line-height: 19px;
   }
@@ -1003,6 +1122,9 @@ ul {
 
 @media (max-width: 768px) {
   .offer__bullets {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
     font-size: 16px;
     line-height: 19px;
   }
@@ -1037,8 +1159,9 @@ ul {
 }
 
 .cart__header-title {
+  font-family: Lato;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 24px;
   line-height: 29px;
   color: #F16D7F;
@@ -1101,8 +1224,9 @@ ul {
 }
 
 .cart__cart-title {
+  font-family: Lato;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 24px;
   line-height: 29px;
   color: #222222;
@@ -1114,6 +1238,9 @@ ul {
 
 @media (max-width: 768px) {
   .cart__cart-title {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 400;
     font-size: 16px;
     line-height: 19px;
     margin-left: 17px;
@@ -1123,8 +1250,9 @@ ul {
 }
 
 .cart__cart-text {
+  font-family: Lato;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 22px;
   line-height: 26px;
   color: #575757;
@@ -1134,6 +1262,9 @@ ul {
 
 @media (max-width: 768px) {
   .cart__cart-text {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 400;
     font-size: 14px;
     line-height: 17px;
     margin-left: 17px;
@@ -1144,8 +1275,9 @@ ul {
 .cart__quantity-button {
   width: 43px;
   height: 24px;
+  font-family: Lato;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 18px;
   line-height: 22px;
   color: #656565;
@@ -1158,6 +1290,9 @@ ul {
   .cart__quantity-button {
     width: 23px;
     height: 14px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 400;
     font-size: 10px;
     line-height: 12px;
     margin-left: 15px;
@@ -1241,6 +1376,7 @@ ul {
 .cart__shopping-buttons {
   width: 235px;
   height: 50px;
+  font-family: Lato;
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
@@ -1254,8 +1390,9 @@ ul {
   .cart__shopping-buttons {
     width: 174px;
     height: 32px;
+    font-family: Lato;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 12px;
     line-height: 14px;
     text-align: center;
@@ -1264,6 +1401,7 @@ ul {
 }
 
 .cart__form-title {
+  font-family: Lato;
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
@@ -1297,12 +1435,23 @@ ul {
 .cart__form-button {
   margin-top: 3px;
   width: 100px;
+  height: 34px;
+  font-family: Lato;
   font-style: normal;
   font-weight: 300;
   font-size: 11px;
   line-height: 13px;
   color: #4A4A4A;
-  padding: 10px 15px 10px 15px;
+}
+
+@media (max-width: 768px) {
+  .cart__form-button {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+  }
 }
 
 .cart__checkout-box {
@@ -1325,8 +1474,9 @@ ul {
 }
 
 .cart__sub-total {
+  font-family: Lato;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 11px;
   line-height: 13px;
   color: #4A4A4A;
@@ -1336,19 +1486,21 @@ ul {
 }
 
 .cart__grand-total {
+  font-family: Lato;
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
   line-height: 19px;
   color: #222222;
   text-align: right;
-  padding: 12px 37px 21px 0px;
+  padding: 12px 37px 0px 0px;
 }
 
 .cart__hr {
   width: 275px;
   height: 1px;
   color: #E2E2E2;
+  margin-left: 40px;
 }
 
 @media (max-width: 1600px) {
@@ -1358,6 +1510,7 @@ ul {
 }
 
 .cart__checkout-button {
+  font-family: Lato;
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
@@ -1366,7 +1519,6 @@ ul {
   width: 273px;
   height: 50px;
   border: 1px solid #F16D7F;
-  margin-top: 17px;
   background-color: #F16D7F;
   position: relative;
   left: 12%;
@@ -1399,7 +1551,7 @@ ul {
 .product__header-title {
   font-family: Lato;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 24px;
   line-height: 29px;
   color: #F16D7F;
@@ -1443,6 +1595,7 @@ ul {
 
 .product__collection-second-title {
   font-family: Lato;
+  font-style: normal;
   font-weight: 300;
   font-size: 18px;
   line-height: 22px;
@@ -1453,10 +1606,12 @@ ul {
 
 .product__collection-text {
   font-family: Lato;
-  width: 555px;
+  font-style: normal;
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
+  width: 555px;
+  font-weight: 300;
   text-align: center;
   color: #5E5E5E;
   margin: 0 auto;
@@ -1492,7 +1647,7 @@ ul {
   border: 1px solid #FF6A6A;
   font-family: Lato;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 19px;
   color: #F26376;
@@ -1508,9 +1663,9 @@ ul {
 }
 
 .btn {
-  font-family: Lato;
-  font-style: normal;
-  font-weight: normal;
+  font-family: Lato !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
   font-size: 14px !important;
   line-height: 17px !important;
 }
@@ -1543,27 +1698,29 @@ ul {
 .breadcrumb-item__link {
   color: #636363;
   text-decoration: none;
-  font-family: Lato;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 17px;
+  font-family: Lato !important;
+  font-style: normal !important;
+  font-weight: 300 !important;
+  font-size: 14px !important;
+  line-height: 17px !important;
 }
 
 .breadcrumb-item.aria-current {
-  font-family: Lato;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 17px;
+  font-family: Lato !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  font-size: 14px !important;
+  line-height: 17px !important;
   color: #F16D7F;
 }
 
 .breadcrumb-item.active {
-  font-family: Lato;
   color: #F16D7F !important;
-  font-style: normal;
-  font-weight: 700;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  font-size: 14px !important;
+  line-height: 17px !important;
+  margin-top: 4px;
 }
 
 .carousel-dark {

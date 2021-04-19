@@ -6,10 +6,7 @@
     }
 
     &__header-title{
-        font-style: normal;
-        font-weight: normal;
-        font-size: 24px;
-        line-height: 29px;
+        @include font (Lato, normal, 400, 24px, 29px);
         color: #F16D7F;
         padding: 59px 0 0 0;
         
@@ -29,20 +26,12 @@
     }
 
     &__form-name {
-    font-style: normal;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 19px;
-    margin-bottom: 20px;
+    @include font (Lato, normal, 300, 19px, 20px);
     color: #222222;
     }
     
     &__button {
-    font-style: normal;
-    font-weight: normal;
-    width: 167px;
-    font-size: 14px;
-    line-height: 17px;
+    @include font (Lato, normal, 300, 14px, 17px);
     color: #FFFFFF;
     padding: 16px 24px 17px 29px;
     background-color: $dark-pink-color;
@@ -71,12 +60,9 @@
 }
 
 .gender__block {
+    @include font (Lato, normal, 300, 11px, 13px);
     margin-top: 13px;
     margin-bottom: 35px;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 11px;
-    line-height: 13px;
 }
 
 .radio {
@@ -88,20 +74,14 @@
 }
 
 .radio__button {
-    font-style: normal;
-    font-weight: 300;
-    font-size: 11px;
-    line-height: 13px;
+    @include font (Lato, normal, 300, 11px, 13px);
     color: #000000;
 }
 
 .form__text {
+    @include font (Lato, normal, 300, 13px, 16px);
     margin-top: -5px;
     margin-bottom: 39px;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 13px;
-    line-height: 16px;
     color: #B1B1B1;
 }
 
@@ -114,10 +94,7 @@
     flex-direction: column;
     width: 652px;
     margin-left: 128px;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 24px;
-    line-height: 29px;
+    @include font (Lato, normal, 300, 24px, 29px);
     color: #000000;
 
     @include tablet {
@@ -130,36 +107,27 @@
     }
 
     &__header {
-        font-weight: 300;
-        font-size: 24px;
-        line-height: 29px;
+        @include font (Lato, normal, 300, 24px, 29px);
 
         @include tablet {
-            font-size: 16px;
-            line-height: 19px;
+            @include font (Lato, normal, 300, 16px, 19px);
         }
     
         @include mobile {
-            font-size: 16px;
-            line-height: 19px;
+            @include font (Lato, normal, 300, 16px, 19px);
         }
     }
 
     &__text {
         margin: 22px auto 21px auto;
-        font-style: normal;
-        font-weight: 300;
-        font-size: 24px;
-        line-height: 29px;
+        @include font (Lato, normal, 300, 24px, 29px);
 
         @include tablet {
-            font-size: 16px;
-            line-height: 19px;
+            @include font (Lato, normal, 300, 16px, 19px);
         }
     
         @include mobile {
-            font-size: 16px;
-            line-height: 19px;
+            @include font (Lato, normal, 300, 16px, 19px);
         }    
     }
 
@@ -167,18 +135,14 @@
         padding-bottom: 16px;
         margin-left: 40px;
         position: relative;
-        font-weight: 300;
-        font-size: 24px;
-        line-height: 29px;
+        @include font (Lato, normal, 300, 24px, 29px);
 
         @include tablet {
-            font-size: 16px;
-            line-height: 19px;
+            @include font (Lato, normal, 300, 16px, 19px);
         }
     
         @include mobile {
-            font-size: 16px;
-            line-height: 19px;
+            @include font (Lato, normal, 300, 16px, 19px);
         } 
     }
 

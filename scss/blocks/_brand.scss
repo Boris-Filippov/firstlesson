@@ -28,33 +28,28 @@
     }
 
     &__title {
-        font-size: 48px;
-        font-weight: 900;
-        line-height: 58px;
-        /* width: 377px; */
         text-transform: uppercase;
+        @include font (Lato, normal, 900, 48px, 58px);
 
         @include tablet {
-            @include font(44px, 52px, normal)
+            @include font(Lato, normal, 900, 44px, 52px)
         }
 
         @include mobile {
-            @include font (38px, 46px)
+            @include font (Lato, normal, 900, 38px, 46px)
         }
     }
 
     &__sub-title {
-        font-size: 32px;
-        font-weight: 700;
-        line-height: 38px;
         display: block;
+        @include font (Lato, normal, 700, 32px, 38px);
 
         @include tablet {
-            @include font(24px, 29px, normal)
+            @include font(Lato, normal, 700, 24px, 29px)
         }
 
         @include mobile {
-            @include font (20px, 24px)
+            @include font (Lato, normal, 700, 20px, 24px)
         }
     }
 
